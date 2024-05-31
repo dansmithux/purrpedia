@@ -10,7 +10,7 @@ To see a hosted live demo, please visit [https://purrpedia.vercel.app](https://p
 ## Installation
 
 ### Clone the Repository
-`git clone https://github.com/dansmithux/purrpedia.git`
+`git clone https://github.com/dansmithux/purrpedia.git`\
 `cd purrpedia`
 
 ### Install Dependencies
