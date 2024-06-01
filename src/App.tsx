@@ -86,7 +86,7 @@ function App() {
       </header>
       <section className="">
         <form onSubmit={fetchData}>
-          <label htmlFor="breed" className="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Search by cat breed</label>
+          <label htmlFor="breed" className="block mb-2 text-lg font-medium text-gray-900 text-white">Search by cat breed</label>
           <input ref={searchInput} id="breed" type="text" value={query} onChange={(e) => setQuery(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
           <button type="submit" className="w-full mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center justify-center">
             { loading 
