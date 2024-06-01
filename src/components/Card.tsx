@@ -43,8 +43,8 @@ const Card: React.FC<CardProps> = ({ cat }) => {
         <div className="border p-8 rounded-lg shadow-md mb-10">
             <img src={`https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`} loading="lazy" alt={`${cat.name} cat`} className="h-48 w-auto mx-auto rounded-lg" />
             <h2 className="mt-2 text-2xl font-bold text-center">{cat.name}</h2>
-            <p className="mt-4 text-lg font-medium">{cat.description}</p>
-            <p className="mt-4 text-base"><span className="font-semibold">Temperament</span>: {cat.temperament}</p>
+            <p className="mt-4 text-base font-regular">{cat.description}</p>
+            <p className="mt-4 text-base"><span className="font-semibold">Temperament</span>: {cat.temperament.toLowerCase()}</p>
             <div className="grid grid-cols-2 gap-x-10 mt-4">
                 <p className="mt-2 text-base"><span className="font-semibold">Weight</span>: {cat.weight.imperial} lb ({cat.weight.metric} kg)</p>
                 <p className="mt-2 text-base"><span className="font-semibold">Origin</span>: {cat.origin}</p>
